@@ -5,12 +5,120 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
 }
 
-h1 {
-  font-weight: 600;
-  font-style: italic;
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo img {
+  width: 110px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  list-style: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  margin-right: 100px;
+  padding-top: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li::after {
+  content: "";
+  background: #009688;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+  /* transform: translateY(0); */
 }
