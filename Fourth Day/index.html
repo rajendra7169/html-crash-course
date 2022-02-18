@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">NAME</th>
+          <th rowspan="2">ADDRESS</th>
+          <th colspan="2">PHONE NUMBER</th>
+          <th rowspan="2">REMARKS</th>
+        </tr>
+        <tr>
+          <th>NTC</th>
+          <th>NCELL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9813566214</td>
+          <td>9841563822</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9813566214</td>
+          <td>9841563822</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9813566214</td>
+          <td>9841563822</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9813566214</td>
+          <td>9841563822</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9813566214</td>
+          <td>9841563822</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <form method="get" action="#">
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email..."
+          required
+        />
+      </div>
+      <div>
+        <label>Gender</label>
+        <span>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+        </span>
+        <span>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+        </span>
+        <span
+          ><input
+            type="radio"
+            id="others"
+            name="gender"
+            value="others"
+            required
+          />
+          <label for="others">Others</label>
+        </span>
+      </div>
+    </form>
+  </body>
+</html>

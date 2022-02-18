@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Page</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="get">
+      <fieldset>
+        <legend>Contact form</legend>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="fullname" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" />
+          </div>
+          <div>
+            <label for="date">Date</lable>
+            <input id="date" type="date" name="date" />
+          </div>
+          <div>
+              <label for="gender">Gender</label>
+              <input id="gender" type="radio" name="gender" value="male"> Male
+              <input id="gender" type="radio" name="gender" value="female"> Female
+              <input id="gender" type="radio" name="gender" value="others"> Others
+          </div>
+          <div>
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                  <option value="Nepal">Nepal</option>
+                  <option value="India">India</option>
+                  <option value="China">China</option>
+                  <option value="Maldivs">Maldivs</option>
+              </select>
+          </div>
+          <div>
+              <label for="browsers">Favorite Browser</label>
+              <input list="browsers" name="favorite-browser" >
+              <datalist id="browsers">
+                  <option value="chrome">Chrome</option>
+                  <option value="firefox">Firefox</option>
+                  <option value="safari">Safari</option>
+              </datalist>
+          </div>
+          <div>
+              <label>Hobbies</label>
+              <input type="checkbox" name="hobbies" value="cycling "> Cycling
+              <input type="checkbox" name="hobbies" value="Coding"> Coding
+              <input type="checkbox" name="hobbies" value="reading "> Reading
+          </div>
+          <div>
+              <label for="image">Your Picture</label>
+              <input type="file" name="image" id="image">
+          </div>
+          <div>
+              <input type="image" src="https://www.w3schools.com/tags/img_submit.gif" alt="Submit-button-image">
+          </div>
+          <div>
+            <button type="reset">Reset</button>
+          </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

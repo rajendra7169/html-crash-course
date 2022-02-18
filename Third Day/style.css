@@ -1,0 +1,15 @@
+table,
+th,
+td {
+  border: 2px solid;
+  border-collapse: collapse;
+}
+
+img {
+  height: 500px;
+  width: auto;
+}
+video {
+  display: block;
+  height: 500px;
+}

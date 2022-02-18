@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#others">Others</a></li>
+        </ul>
+      </nav>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">NAME</th>
+          <th rowspan="2">ADDRESS</th>
+          <th colspan="2">PHONE NUMBER</th>
+          <th rowspan="2">REMARKS</th>
+        </tr>
+        <tr>
+          <th>NTC</th>
+          <th>NCELL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rajendra Pandey</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9841234569</td>
+          <td>9803223472</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Milan Kharel</td>
+          <td>Mulpani, Kathmandu</td>
+          <td>9841564236</td>
+          <td>9803229823</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Kritika Pandey</td>
+          <td>Chabahil, Kathmandu</td>
+          <td>9841564222</td>
+          <td>9803229867</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Sujan Dhahal</td>
+          <td>Prithvichok, Pokhara</td>
+          <td>9841091245</td>
+          <td>9803220971</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Manoj Phokrel</td>
+          <td>Sallaghari, Bhaktapur</td>
+          <td>9841091123</td>
+          <td>9803225642</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="#" method="get">
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your mail..."
+          required
+        />
+      </div>
+      <div>
+        <label for="phone-number">Phone Number</label>
+        <input
+          type="tel"
+          id="phone-number"
+          name="phone-number"
+          placeholder="Enter your phone number..."
+          required
+        />
+      </div>
+      <div>
+        <label>Gender</label>
+        <span>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+        </span>
+        <span>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+        </span>
+        <span
+          ><input
+            type="radio"
+            id="others"
+            name="gender"
+            value="others"
+            required
+          />
+          <label for="others">Others</label>
+        </span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <img
+      src="https://imagekit.io/blog/content/images/2020/12/image-resizing-html.jpg"
+      alt="Html Photo"
+    />
+    <video
+      src="https://www.w3schools.com/html/mov_bbb.mp4"
+      alt="Html video"
+      controls
+      loop
+      muted
+      poster="https://imagekit.io/blog/content/images/2020/12/image-resizing-html.jpg"
+    ></video>
+    <div id="others">Hi, This is an test doc.</div>
+  </body>
+</html>
